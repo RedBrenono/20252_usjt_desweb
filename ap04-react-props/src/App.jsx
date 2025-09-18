@@ -3,24 +3,24 @@ import Cartao from "./Cartao"
 import Hippo from "./Hippo"
 const App = () => {
     return (
-        <div className="container">
+        <div className="container-fluid">
             <div className="row">
-                <div className="col-sm-12 col-md-6 col-xl-3">
+                <div className="col-12">
                     <Cartao>
                     <Hippo
                         tipo="cat"
                         tamanho="3" />
                     <Hippo
                         tipo="cat"
-                        tamanho="3"
-                        espelhamento="flip-horizontal" />
-                    <Hippo
-                        tipo="cat"
                         tamanho="2"
                         espelhamento="flip-horizontal" />
                     <Hippo
                         tipo="cat"
-                        tamanho="2"
+                        tamanho="1"
+                        espelhamento="flip-horizontal" />
+                    <Hippo
+                        tipo="cat"
+                        tamanho="1"
                         espelhamento="flip-horizontal" />
                     </Cartao>
                 </div>
