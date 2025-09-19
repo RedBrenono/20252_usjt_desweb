@@ -1,4 +1,4 @@
-const Pedido = ({ data, icone, titulo, descricao}) => {
+const Pedido = ({ data, icone, titulo, descricao }) => {
     // const data = props.data
     // const icone = props.icone
     // const titulo = props.titulo
@@ -9,11 +9,10 @@ const Pedido = ({ data, icone, titulo, descricao}) => {
     //     titulo,
     //     descricao
     // } = props
-    return <div className="card">
-        <div className="card-header text-muted">
-            {data}
-        </div>
-        <div className="card-body d-flex">
+
+    //fragmento, tira um nó da arvore do codigo para deixa mais leve a pagina no navegador, usando fragments, tirando o div que está la apenas para agrupar os outros divs
+    return <>
+        <div className="d-flex">
             <div className="d-flex align-items-center">
                 <i className={`fa-solid fa-${icone} fa-2x`}></i>
             </div>
@@ -22,6 +21,6 @@ const Pedido = ({ data, icone, titulo, descricao}) => {
                 <p className="text-center">{descricao}</p>
             </div>
         </div>
-    </div>
+    </>
 }
 export default Pedido
